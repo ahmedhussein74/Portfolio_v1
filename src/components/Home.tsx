@@ -1,26 +1,15 @@
 import "../css/Home.css";
-import { useEffect } from 'react'
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { Box } from "@mui/material";
 
 const Home = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   return (
-    <Box
-      id="home"
-      component="section"
-      className="h-screen flex flex-wrap items-center content-center"
-    >
-      <p className="text-white text-4xl w-full h-fit pl-5 mb-5">
-        Hi, My name is Ahmed Hussein
+    <section className="h-screen overfloow-hidden">
+      <p className="text-white">
+        Hi, my name is Ahmed Hussein <br />
+        and I'm a <br />
+        <span>Front end Developer</span>
       </p>
-      <p className="text-white text-4xl w-full h-fit pl-5 mt-5">
-        I'm a Front end Developer
-      </p>
-    </Box>
+      <div className="mycircle rounded-full flex justify-center items-center"></div>
+    </section>
   );
 };
 

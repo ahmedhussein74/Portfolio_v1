@@ -1,6 +1,115 @@
-#home{
+section {
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mycircle {
+  width: 350px;
+  height: 350px;
+  background: url("./bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(5,85,145,0.7),rgba(5,85,145,0.7)),url('../imgs/bg.jpg');
+  position: relative;
+  box-shadow: #6f42c1 0px 54px 55px, #6f42c1 0px -12px 30px, #6f42c1 0px 4px 6px,
+    #6f42c1 0px 12px 13px, #6f42c1 0px -3px 5px;
+}
+
+.mycircle::after {
+  content: "";
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  position: absolute;
+  border: 10px #dc3545 solid;
+  border-bottom: 10px transparent solid;
+  animation: rotate 3s linear infinite forwards;
+}
+.mycircle::before {
+  content: "";
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  position: absolute;
+  border: 10px #0d6efd solid;
+  border-top: 10px transparent solid;
+  animation: rotate 3s linear infinite forwards;
+}
+
+p {
+  font-size: 30px;
+}
+
+p span {
+  font-weight: bold;
+  color: #ffc107;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    padding: 25% 0;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .mycircle {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30%;
+  }
+  .mycircle::before {
+    width: 240px;
+    height: 240px;
+    border: 8px #0d6efd solid;
+    border-top: 8px transparent solid;
+  }
+
+  .mycircle::after {
+    width: 280px;
+    height: 280px;
+    border: 8px #dc3545 solid;
+    border-bottom: 8px transparent solid;
+  }
+
+  p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  p span {
+    font-weight: normal;
+  }
+}
+
+
+@media screen and (max-width: 1024px) and (min-width:600px) {
+  .mycircle {
+    width: 180px;
+    height: 180px;
+  }
+  .mycircle::before {
+    width: 210px;
+    height: 210px;
+    border: 8px #0d6efd solid;
+    border-top: 8px transparent solid;
+  }
+
+  .mycircle::after {
+    width: 250px;
+    height: 250px;
+    border: 8px #dc3545 solid;
+    border-bottom: 8px transparent solid;
+  }
+
+  p {
+    font-size: 20px;
+  }
 }
