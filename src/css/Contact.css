@@ -1,0 +1,66 @@
+#contact{
+  padding-bottom: 100px;
+}
+.img {
+  width: 200px;
+  height: 200px;
+  background: url("../imgs/profile.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: #d63384 0px 2px 4px 0px, #6f42c1 0px 2px 20px 0px;
+}
+
+#contact i {
+  font-size: 2rem;
+  background: linear-gradient(45deg, rgb(225 29 72), rgb(225 29 72));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+#contact h1 {
+  font-size: 40px !important;
+  background-color: #d63384;
+  background-image: linear-gradient(180deg, #d63384, #6f42c1);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.top-info p {
+  font-size: 20px;
+}
+
+.bottom-info {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  gap: 50px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  #contact{
+    padding-bottom: 70px;
+  }
+
+  .img {
+    width: 150px;
+    height: 150px;
+  }
+
+  #contact h1 {
+    font-size: 30px !important;
+  }
+
+  #contact i {
+    font-size: 1.5rem;
+  }
+
+  .bottom-info {
+    gap: 25px;
+  }
+}

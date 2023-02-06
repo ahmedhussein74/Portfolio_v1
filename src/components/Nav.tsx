@@ -15,9 +15,6 @@ const Nav = () => {
       <a href="#contact" className="rounded-full no-underline">
         <i className="fa-solid fa-envelope"></i>
       </a>
-      <a href="#personal" className="rounded-full no-underline">
-        <i className="fa-solid fa-user"></i>
-      </a>
     </nav>
   );
 };

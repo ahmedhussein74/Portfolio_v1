@@ -1,9 +1,8 @@
 nav {
-  width: 400px;
+  width: 300px;
   height: 60px;
-  left: calc(50% - 200px);
+  left: calc(50% - 150px);
   background-color: #e2e8f099;
-  box-shadow: #6f42c1 0px 5px 15px;
   box-shadow: #d63384 0px 2px 4px 0px, #6f42c1 0px 2px 20px 0px;
 }
 nav a {
@@ -29,6 +28,6 @@ nav a:hover {
   nav a {
     width: 30px;
     height: 30px;
-    font-size: 16px;
+    font-size: 18px;
   }
 }
