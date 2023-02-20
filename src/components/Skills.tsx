@@ -28,7 +28,7 @@ const Skills = () => {
       <Grid
         container
         spacing={5}
-        justifyContent='space-evenly'
+        justifyContent='space-around'
       >
         {skills.map((val, index) => (
           <Grid item xs={8} sm={4} md={4} key={index}>

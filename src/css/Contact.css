@@ -37,7 +37,7 @@
 
 .bottom-info {
   display: grid;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: repeat(5, auto);
   gap: 50px;
   justify-content: center;
 }

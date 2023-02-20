@@ -9,12 +9,11 @@ const Contact = () => {
         <p className="text-center text-white my-0 py-0">Front end Developer</p>
       </div>
       <div className="bottom-info mt-8">
-        <a href=""><i className="fab fa-whatsapp"></i></a>
-        <a href=""><i className="fab fa-facebook-f"></i></a>
-        <a href=""><i className="far fa-envelope"></i></a>
-        <a href=""><i className="fab fa-github"></i></a>
-        <a href=""><i className="fab fa-telegram-plane"></i></a>
-        <a href=""><i className="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/qr/6VYZYWSEUQMEC1"><i className="fab fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/AhmedHusein22/"><i className="fab fa-facebook-f"></i></a>
+        <a href="mailto:ahmedhusseinofficial22@gmail.com"><i className="far fa-envelope"></i></a>
+        <a href="https://github.com/ahmedhussein74"><i className="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ahmed-hussein-23b95b1b8"><i className="fab fa-linkedin-in"></i></a>
       </div>
     </section>
   )
