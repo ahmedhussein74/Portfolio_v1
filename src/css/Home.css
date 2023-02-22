@@ -8,7 +8,7 @@
 .mycircle {
   width: 350px;
   height: 350px;
-  background: url("./bg.jpg");
+  background: url("../imgs/profile.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

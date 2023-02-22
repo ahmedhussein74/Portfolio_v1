@@ -1,25 +1,22 @@
+.skills {
+  grid-template-columns: repeat(4, 200px);
+}
+
 #skills span {
-  font-size: 25px;
-  text-align: center;
+  width: 200px;
+  font-size: 20px;
   box-shadow: #d63384 0px 2px 4px 0px, #6f42c1 0px 2px 20px 0px,
     #d63384 0px 2px 4px 0px, #6f42c1 0px 2px 20px 0px;
 }
 
-#skills h2 {
-  font-size: 35px;
-  color: transparent;
-  background-clip: text;
-  font-family: sans-serif;
-  padding-bottom: 50px;
-  color: #fff;
+@media screen and (max-width: 500px) {
+  .skills {
+    grid-template-columns: 200px;
+  }
 }
 
-@media screen and (max-width: 500px) {
-  #skills span {
-    font-size: 18px;
-  }
-
-  #skills h2 {
-    padding-bottom: 20px;
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .skills {
+    grid-template-columns: repeat(3, 200px);
   }
 }

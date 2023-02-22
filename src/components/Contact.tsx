@@ -5,8 +5,8 @@ const Contact = () => {
     <section className="py-6" id="contact">
       <div className="top-info">
         <div className="img rounded-full mx-auto mb-6"></div>
-        <h1 className="font-bold text-center my-0 py-0">Ahmed Hussein</h1>
-        <p className="text-center text-white my-0 py-0">Front end Developer</p>
+        <h1 className="font-bold text-center text-white my-0 py-0">Ahmed Hussein</h1>
+        <p className="text-center text-white my-0 py-0">Web Developer</p>
       </div>
       <div className="bottom-info mt-8">
         <a href="https://wa.me/qr/6VYZYWSEUQMEC1"><i className="fab fa-whatsapp"></i></a>

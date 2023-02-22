@@ -1,34 +1,32 @@
 #contact{
-  padding-bottom: 100px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url('../imgs/contact-bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .img {
   width: 200px;
   height: 200px;
-  background: url("../imgs/profile.jpeg");
+  background: url("../imgs/bg.jpg");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: #d63384 0px 2px 4px 0px, #6f42c1 0px 2px 20px 0px;
+  box-shadow: #ffeb3b 0px 2px 20px 0px;
 }
 
 #contact i {
   font-size: 2rem;
-  background: linear-gradient(45deg, rgb(225 29 72), rgb(225 29 72));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+  color: #ffeb3b;
 }
 
 #contact h1 {
   font-size: 40px !important;
-  background-color: #d63384;
-  background-image: linear-gradient(180deg, #d63384, #6f42c1);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
 }
 
 .top-info p {
@@ -43,9 +41,6 @@
 }
 
 @media screen and (max-width: 500px) {
-  #contact{
-    padding-bottom: 70px;
-  }
 
   .img {
     width: 150px;
