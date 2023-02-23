@@ -46,12 +46,18 @@ const Projects = () => {
       <main className="py-12 grid gap-12 justify-center">
         {arr.map((val, index) => (
           <div className="card-div rounded overflow-hidden" key={index}>
-            <img src={val.image} className='w-full' />
+            <img src={val.image} className="w-full" />
             <div className="flex justify-around items-center">
-              <a href={val.live} className="bg-red-700 text-white rounded flex justify-center items-center">
+              <a
+                href={val.live}
+                className="bg-red-700 text-white rounded flex justify-center items-center"
+              >
                 Live
               </a>
-              <a href={val.code} className="bg-blue-700 text-white rounded flex justify-center items-center">
+              <a
+                href={val.code}
+                className="bg-blue-700 text-white rounded flex justify-center items-center"
+              >
                 Code
               </a>
             </div>

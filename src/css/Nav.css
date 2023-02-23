@@ -8,7 +8,6 @@ nav {
 nav a {
   width: 45px;
   height: 45px;
-  display: grid;
   place-items: center;
   font-size: 22px;
   color: #06223f;

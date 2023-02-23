@@ -21,12 +21,19 @@
 }
 
 #contact i {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
   font-size: 2rem;
   color: #ffeb3b;
+  border-radius: 50%;
+  transition: 0.5s all ease-in-out;
 }
 
-#contact h1 {
-  font-size: 40px !important;
+#contact i:hover{
+  color: #06223f;
+  background: #fff;
 }
 
 .top-info p {
@@ -34,28 +41,23 @@
 }
 
 .bottom-info {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
   gap: 50px;
-  justify-content: center;
+  grid-template-columns: repeat(5, 50px);
 }
 
 @media screen and (max-width: 500px) {
-
   .img {
     width: 150px;
     height: 150px;
   }
 
-  #contact h1 {
-    font-size: 30px !important;
-  }
-
   #contact i {
+    width: 30px;
+    height: 30px;
     font-size: 1.5rem;
   }
 
   .bottom-info {
-    gap: 25px;
+    gap: 10px;
   }
 }
