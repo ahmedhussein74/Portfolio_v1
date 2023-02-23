@@ -5,8 +5,15 @@
 #skills span {
   width: 200px;
   font-size: 20px;
+  transition: 0.5s all ease-in-out;
   box-shadow: #d63384 0px 2px 4px 0px, #6f42c1 0px 2px 20px 0px,
     #d63384 0px 2px 4px 0px, #6f42c1 0px 2px 20px 0px;
+}
+
+#skills span:hover {
+  color: #6f42c1;
+  font-weight: bold;
+  background: #fff;
 }
 
 @media screen and (max-width: 500px) {

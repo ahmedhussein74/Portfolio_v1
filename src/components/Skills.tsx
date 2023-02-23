@@ -1,6 +1,12 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "../css/Skills.css";
+import { useEffect } from "react";
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const skills = [
     "HTML",
     "CSS",
@@ -17,7 +23,7 @@ const Skills = () => {
     "MySQL",
     "Node",
     "Express",
-    "MongoDB"
+    "MongoDB",
   ];
 
   return (
@@ -25,7 +31,11 @@ const Skills = () => {
       <h1 className="text-center text-white">Skills</h1>
       <div className="skills grid gap-12 justify-center py-12">
         {skills.map((val, index) => (
-          <span key={index} className="p-2 rounded-full text-white text-center">
+          <span
+            key={index}
+            className="p-2 rounded-full text-white text-center"
+            data-aos="zoom-in"
+          >
             {val}
           </span>
         ))}
