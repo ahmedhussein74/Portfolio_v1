@@ -1,17 +1,29 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "../css/Projects.css";
+import { useEffect } from "react";
+import mint from "../imgs/mint.png";
+import aflami from "../imgs/Aflami.png";
 import todoapp from "../imgs/To-Do-App.png";
 import cashback from "../imgs/Cash-Back.png";
-import mint from "../imgs/mint.png";
-import portfolio from "../imgs/Ahmed-Hussein.png";
-import aflami from "../imgs/Aflami.png";
 import weatherapp from "../imgs/Weather-App.png";
+import portfolio from "../imgs/Ahmed-Hussein.png";
+import country from "../imgs/Country-App.png"
 
 const Projects = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const arr = [
     {
       live: "https://todo-react-app-blush.vercel.app/",
       code: "https://github.com/ahmedhussein74/todo-react-app",
       image: todoapp,
+    },
+    {
+      live: "https://country-app-phi.vercel.app/",
+      code: "https://github.com/ahmedhussein74/Country-app",
+      image: country,
     },
     {
       live: "https://ahmedhussein74.github.io/CashBack/",
@@ -45,7 +57,11 @@ const Projects = () => {
       <h1 className="text-center text-white">Projects</h1>
       <main className="py-12 grid gap-12 justify-center">
         {arr.map((val, index) => (
-          <div className="card-div rounded overflow-hidden" key={index}>
+          <div
+            className="card-div rounded overflow-hidden"
+            key={index}
+            data-aos="flip-right"
+          >
             <img src={val.image} className="w-full" />
             <div className="flex justify-around items-center">
               <a

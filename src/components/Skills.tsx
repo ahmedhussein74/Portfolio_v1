@@ -6,7 +6,7 @@ import { useEffect } from "react";
 const Skills = () => {
   useEffect(() => {
     AOS.init();
-  }, []);
+  }, []); 
   const skills = [
     "HTML",
     "CSS",
@@ -29,7 +29,7 @@ const Skills = () => {
   return (
     <section id="skills" className="py-12">
       <h1 className="text-center text-white">Skills</h1>
-      <div className="skills grid gap-12 justify-center py-12">
+      <div className="skills grid gap-12 justify-center py-8">
         {skills.map((val, index) => (
           <span
             key={index}
