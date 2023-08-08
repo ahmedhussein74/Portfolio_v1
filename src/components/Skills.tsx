@@ -19,7 +19,6 @@ const Skills = () => {
     "Tailwind",
     "Redux",
     "Material UI",
-    "PHP",
     "MySQL",
     "Node",
     "Express",
